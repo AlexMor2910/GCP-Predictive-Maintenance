@@ -57,7 +57,7 @@ def f_error_code(f14_list_vars: list):
 
 def f_parameters():
     try:
-        f27_model = models.load_model("best_model.keras", compile=False)
+        f27_model = models.load_model("model.keras", compile=False)
         f27_config = f27_model.get_config()
         f27_input_size: int = f27_config["layers"][0]["config"]["batch_shape"][1]
 
